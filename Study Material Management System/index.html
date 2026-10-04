@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">📚 StudyHub</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#materials">Materials</a>
+            <a href="#add">Add Material</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <h1>Study Material Management System</h1>
+
+            <p>
+                Organize, manage and access your study materials
+                easily in one place.
+            </p>
+
+            <a href="#materials" class="btn">View Materials</a>
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <div class="stat-card">
+            <h2 id="totalMaterials">0</h2>
+            <p>Total Materials</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="pdfCount">0</h2>
+            <p>PDF Materials</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="videoCount">0</h2>
+            <p>Video Materials</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="noteCount">0</h2>
+            <p>Notes</p>
+        </div>
+
+    </section>
+
+
+    <!-- Materials Section -->
+    <section class="materials-section" id="materials">
+
+        <h2>Study Materials</h2>
+
+        <!-- Search and Filter -->
+        <div class="controls">
+
+            <input type="text" id="searchInput" placeholder="🔍 Search study material...">
+
+            <select id="subjectFilter">
+
+                <option value="all">All Subjects</option>
+                <option value="Web Technology">Web Technology</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="DBMS">DBMS</option>
+                <option value="Computer Networks">Computer Networks</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Material Cards -->
+        <div id="materialContainer" class="material-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- Add Material Section -->
+    <section class="add-section" id="add">
+
+        <h2>Add Study Material</h2>
+
+        <form id="materialForm">
+
+            <div class="form-group">
+
+                <label>Material Title</label>
+
+                <input type="text" id="title" placeholder="Enter material title" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Subject</label>
+
+                <select id="subject" required>
+
+                    <option value="">Select Subject</option>
+                    <option value="Web Technology">Web Technology</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="DBMS">DBMS</option>
+                    <option value="Computer Networks">Computer Networks</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Material Type</label>
+
+                <select id="type" required>
+
+                    <option value="">Select Type</option>
+                    <option value="PDF">PDF</option>
+                    <option value="Video">Video</option>
+                    <option value="Notes">Notes</option>
+                    <option value="PPT">PPT</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Material Link</label>
+
+                <input type="url" id="link" placeholder="https://example.com" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Description</label>
+
+                <textarea id="description" placeholder="Enter material description" required></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+                ➕ Add Material
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About the System</h2>
+
+        <p>
+            The Study Material Management System is a web-based application
+            developed using HTML, CSS and JavaScript. It helps students
+            organize, search and manage their academic study materials
+            efficiently.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Study Material Management System
+        </p>
+
+        <p>
+            Developed using HTML | CSS | JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
